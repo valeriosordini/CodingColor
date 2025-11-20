@@ -1,5 +1,5 @@
 # CodingColor
 ## Valerio Sordini
 ##4BINF
-##tpist
+##tpsit
 <a>github.com/valeriosordini</a>
