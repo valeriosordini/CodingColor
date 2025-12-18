@@ -1,8 +1,32 @@
-<html>
-	<head>
-	</head>
-
-	<body>
-	</body>
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+       <meta charset="utf-8">
+       <title>Coding&Color - 4AI</title>
+       <link href="style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+       <div id="header">
+           <h1 id="saluto">Oggi è un bel giorno!</h1>
+       </div>
+       <div id="title">
+           <h1>CODICI e COLORI</h1>
+       </div>
+       <div id="input">
+           <label for="inNumber">Inserisci un numero: </label>
+           <input id="inNumber" placeholder="inserisci un numero">
+           <br><br>
+           <button type="button" id="btnElabora" onclick="elabora()">Elabora</button>
+           <button type="button" id="btnCancella" onclick="reset()">Resetta</button>
+       </div>
+       <div id="output">
+            <p>Output</p>
+           <p id="outText">-</p>
+       </div>
+       <div>
+            <p>Errori</p>
+           <p id="error">-</p>
+       </div>
+       <script src="script.js"></script>
+   </body>
 </html>
-
