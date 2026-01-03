@@ -4,8 +4,12 @@ console.log(d);
 document.getElementById("saluto").innerHTML=d;
 
 let colori = [];
+
 function elabora(){
   let numero = document.getElementById("inNumber").value;
+
+  // pulisce eventuali errori precedenti
+  document.getElementById("error").innerHTML = "";
 
   //verifica se numero inserito è valido
   if (numero >=0 && numero <= 255) {
@@ -29,7 +33,7 @@ function elabora(){
 function reset() {
     colori = [];
     document.getElementById("inNumber").value = "";
-    document.getElementById("outText").innerHTML = "-";
-    document.getElementById("outText").style.color = white;
+    document.getElementById("outText").innerHTML = "";
+    document.getElementById("outText").style.color = "";
     document.getElementById("error").innerHTML = "";
 }
