@@ -7,6 +7,7 @@ let colori = [];
 
 function elabora(){
   let numero = document.getElementById("inNumber").value;
+  let testo = document.getElementById("inText").value;
 
   // pulisce eventuali errori precedenti
   document.getElementById("error").innerHTML = "";
@@ -21,7 +22,8 @@ function elabora(){
     document.getElementById("outText").innerHTML += "<br> I colori inseriti sono: " + colori;
     console.log(colori);
     if (colori.length==3){
-      document.getElementById("outText").style.color=`rgb(${colori[0]},${colori[1]},${colori[2]})`;
+      document.getElementById("coloredText").innerHTML = testo;
+      document.getElementById("coloredText").style.color=`rgb(${colori[0]},${colori[1]},${colori[2]})`;
     } 
   }
   else {
@@ -33,7 +35,10 @@ function elabora(){
 function reset() {
     colori = [];
     document.getElementById("inNumber").value = "";
+    document.getElementById("inText").value = "";
     document.getElementById("outText").innerHTML = "";
     document.getElementById("outText").style.color = "";
+    document.getElementById("coloredText").innerHTML = "";
+    document.getElementById("coloredText").style.color = "";
     document.getElementById("error").innerHTML = "";
 }
